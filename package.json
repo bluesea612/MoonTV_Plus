@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "pnpm gen:manifest && node server.js",
-    "build": "pnpm gen:manifest && NEXT_PUBLIC_STORAGE_TYPE=UPSTASH next build",
+    "build": "pnpm gen:manifest && next build",
     "build:cloudflare": "BUILD_TARGET=cloudflare pnpm gen:manifest && BUILD_TARGET=cloudflare npx @opennextjs/cloudflare build",
     "start": "NODE_ENV=production node server.js",
     "preview:cloudflare": "wrangler dev",
